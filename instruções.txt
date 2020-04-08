@@ -1,0 +1,17 @@
+﻿1. Primeiramente rodar o seguinte comando no MySQL:
+	create database api_laravel_usage;
+
+2. Se o banco de dados não tiver senha e usuário root, não alterar a .env, caso contrário colocar usuário e senha no arquivo.
+
+3. Com o banco "api_laravel_usage" criado, executar:
+	php artisan migrate
+	
+4. Rodar php artisan serve, para emular um servidor local.
+
+5. Fim.
+
+/* Usabilidade */
+
+Para listar os carros: localhost:8000/api/listCars
+Para criar um carro, no postman/insomnia ou programa para API rest utilizado, método POST em: localhost:8000/api/createCar
+Para listar os logs: localhost:8000/api/logs
